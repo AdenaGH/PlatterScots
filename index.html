@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fruits and Veggies in the US</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="slides slide1">
+                <!-- <img src="apple.png" />
+                <img src="brocolli.png" />
+                <img src="banana.png" /> -->
+                <video autoplay muted loop>
+                    <source src="fruit_ninja.mp4" type="video/mp4" />
+                </video>
+                <div id="title-container">
+                    <h2>Fruit and Vegetable Prices in the US</h2>
+                    <div id="line-break"></div>
+                    <div id="subtitle">What You Don't Know About Your Produce Aisle Can Hurt You</div>
+                </div>
+            </div>
+            <div class="slides slide2 content-slide">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>Let's Start Simple</h2>
+                    <h3 class="content-text">Last time you went to the grocery store, did your eyes widen when you saw the prices in the produce section? Well ours did, and we wanted to learn more about how much prices of fruits and vegetables have actually increased in the past decade. There are many factors that affect the price of a produce good, but we'll dive deeper into that later. For now, let's just look at how much prices have increased from 2012-2022.</h3>
+                    <div class="visualization-container">
+                        <div id="price-bar-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide3 content-slide">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>Time to Break It Down</h2>
+                    <h3 class="content-text">
+                        Now that we have seen the general price increases for produce based on packaging form, let's dive deeper and see which fruits and vegetables have had the highest increases in price since 2012. The size of the bubbles on the left represent the persent price increase of various fruits and vegetables, click a bubble to break down the price increase based on product form.
+                    </h3>
+                    <div class="visualization-container" style="display: flex; justify-content: space-between;">
+                        <!-- Left: Bubble Chart -->
+                        <div id="bubble-chart" style="width: 45%; height: 100%;"></div>
+                        
+                        <!-- Right: Line Chart -->
+                        <div style="width: 100%; height: 100%;">
+                            <svg id="line-chart" width="400" height="400"></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide4">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>How Much of the Produce is Actually Edible?</h2>
+                    <h3 class="content-text">We've seen how much the prices of different produce items can fluctuate, but what some people fail to think about is the fact that just because we buy the whole fruit/vegetable that doesn't mean we can eat the whole thing. "Yield" is the word used to describe how much of the product is actually usable, let's take a look at what the yield is for some of our favorite produce products.  </h3>
+                    <div class="visualization-container">
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide5">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>Diving Deeper into Yield</h2>
+                    <h3 class="content-text">Not sure what to write here bc I don't know what the graph will look like</h3>
+                    <div class="visualization-container">
+                        <h3>This slide would be graph 6 to keep talking about yield, gotta make this graph more advanced though</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide6">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>Let's Put it All Together</h2>
+                    <h3 class="content-text">We've seen how factors like packaging form and yield can affect prices of a good, now let's put all these factors together to see the big picture of which factors cause the highest prices.</h3>
+                    <div class="visualization-container">
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide7">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>How Much is Your Grocery Basket?</h2>
+                    <h3 class="content-text">A person rarely buys a singular produce product at the grocery store. The US uses a standardized "basket of goods" to calculate inflation, we have selected only the produce products from this basket to show you how much your grocery basket total has changed over the years due to fluctuating grocery prices. Use the slider to move through the years and see this variation.</h3>
+                    <div class="visualization-container">
+                        <h3> </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide8">
+                <img class="background-img" src="background1.png" />
+                <div class="content-container">
+                    <h2>US Inflation in Relation to Produce</h2>
+                    <h3 class="content-text">How much should retailers increase their prices by? If they do, do they abide by it? Is the inflation rate the only
+                        reason that produce prices are increasing or are retailers charging more? Let's see the suggested price increase in USD according to inflation vs what retailers are actually
+                        increasing it by.
+                    </h3>
+                    <div class="visualization-container">                        
+                        <div id="inflation-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides slide9">
+                <video autoplay muted loop>
+                    <source src="fruit_ninja.mp4" type="video/mp4" />
+                </video>
+                <div class="content-container">
+                    <h2>Ok...What Now?</h2>
+                    <h3 class="content-text">Think about everything you just learned next time you go to the grocery store. Instead of just grabbing the first bag of apples you see, ask yourself if you are getting the best value based on the information above. Will the recipe you are making taste the same if you buy canned apples instead of fresh? Could you switch it for pears since you know they have a higher yield? How many cups of sliced apples do you need for that pie, and can you acheive that amount with less apples than what is in the pre-packaged bag? These are just examples, but we implore you to take your newfound knowledge and apply it to your purchases. Learning about how your produce is priced can make you a more proactive consumer and can help you ensure you are getting the most bang for your buck at the grocery store.</h3>
+                    <h2 style="padding-top: 50px;">Thank You!</h2>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="//d3js.org/d3.v6.min.js"></script>
+    <script src="parallel_plot.js"></script>
+    <script src ="edible_yield.js"></script>
+    <script src="Slide3.js"></script>
+    <script src="basket_over_time.js"></script>
+    <script src="price_bar_chart.js"></script>
+    <script src="inflation.js"></script>
+
+</html>
